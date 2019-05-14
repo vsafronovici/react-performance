@@ -1,0 +1,162 @@
+.cardSSP {
+  transition: 0.5s ease;
+  @media (max-width: 576px) {
+    padding: 8px 8px;
+  }
+  background-color:#FAFAFA;
+
+  @media (min-width: 768px) {
+    margin: 20px 20px;
+    padding: 10px 10px;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $white;
+    .cardssp_bottom {
+      background-color: $white;
+    }
+  }
+}
+
+.cardssp_top {
+  background-color: $white;
+  height: 210px;
+  padding: 10px 20px;
+  @media (min-width: 992) {
+    height: 210px;
+  }
+  @media (min-width: 768px) {
+    height: 230px;
+  }
+  @media (max-width: 576px) {
+    height: 235px;
+  }
+
+}
+
+
+.cardssp_title {
+  text-align: center;
+  margin-bottom: 10px;
+  h5 {
+    font-size: 12px;
+    color: $orange;
+  }
+}
+.cardssp_img {
+  text-align: center;
+  img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.cardssp_cards {
+  text-align: center;
+  span {
+    width: 25px;
+  }
+  img {
+    width: 35px;
+    margin-left: 10px;
+    @media (max-width: 768px) {
+      width: 20px;
+      margin-left: 6px;
+    }
+    @media (min-width: 769px) {
+      width: 30px;
+      margin-left: 6px;
+    }
+    @media (max-width: 576px) {
+      width: 40px;
+    }
+  }
+
+}
+
+.cardssp_bottom {
+  background-color: #FAFAFA;
+  &:hover {
+    background-color: $white;
+  }
+  margin-top: 30px;
+  @media (min-width: 768px) {
+    height: 350px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 1600px) {
+    height:250px ;
+  }
+  @media (min-width: 1900px) {
+    height:170px ;
+  }
+  .cardssp_subtitleBold {
+    margin-top: 10px;
+  }
+  .cardssp_subtitle {
+    margin-top: 10px;
+  }
+  .cardssp_list {
+    margin-top: 10px;
+  }
+}
+
+.cardssp_white {
+  text-align: center;
+  padding: 15px 20px;
+  background-color: $white;
+  height: 172px;
+  @media (max-width: 576px) {
+    height: 182px;
+  }
+  h5 {
+    color: $orange;
+    font-size: 16px;
+  }
+}
+.cardssp_white_perMonth {
+  color: $orange;
+}
+
+.cardssp_white_titles {
+  font-size: 10px;
+  color: $white-grey;
+  margin-top: 10px;
+  @media (max-width: 576px) {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+}
+
+.cardssp_white_link {
+  font-size: 9px;
+  background-color: $orange;
+  color: $white;
+  padding: 7px 15px;
+  margin-top: 10px;
+  transition: 1s ease;
+  @media (max-width: 576) {
+    font-size: 11px;
+  }
+  &:hover {
+    color: $white;
+    background-color: $orange;
+    text-decoration-line: none;
+  }
+}
+.cardssp_white_link_back {
+  font-size: 10px;
+  background-color: $grey;
+  color: $white;
+  padding: 17px 35px;
+  margin-top: 10px;
+  transition: 1s ease;
+  @media (max-width: 576) {
+    font-size: 11px;
+  }
+  &:hover {
+    color: $white;
+    background-color: $orange;
+    text-decoration-line: none;
+  }
+}

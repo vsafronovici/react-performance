@@ -1,0 +1,90 @@
+.light-card-top-part {
+  width: 210px;
+  background-color: #FFF;
+  height: 210px;
+  padding: 10px 20px;
+  @media (min-width: 992) {
+    height: 210px;
+  }
+  @media (min-width: 768px) {
+    height: 230px;
+  }
+  @media (max-width: 576px) {
+    height: 235px;
+  }
+  
+}
+/** ---------- TOP ----------- **/
+
+.light-card-title-top {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  font-size: 12px !important;
+  color: #dc4405 !important;
+  text-align: center !important;
+}
+
+.light-card-img-top {
+  width: 120px !important;
+  height: 120px !important;
+  text-align: center !important;
+}
+
+.light-card-cards-img-top {
+  width: 30px !important;
+  margin-left: 10px !important;
+  display: inline-block !important;
+}
+
+/** ------------  MIDDLE   ---------------**/
+
+.light-card-title-middle {
+  margin-bottom: 10px !important;
+  font-size: 17px !important;
+  color: #212529 !important;
+  font-weight: 900 !important;
+}
+
+.light-card-subTitle-middle {
+  margin-bottom: 10px !important;
+  font-size: 16px !important;
+  color: #212529 !important;
+}
+
+/** ------------  BOTTOM   ---------------**/
+
+.light-card-price-bottom {
+  font-size: 16px !important;
+  color: #dc4405 !important;
+  margin-bottom: 10px !important;
+  text-align: center !important;
+}
+
+.light-card-perMonth-bottom {
+  font-size: 16px !important;
+  color: #dc4405 !important;
+  margin-bottom: 10px !important;
+  text-align: center !important;
+}
+
+.light-card-titles-bottom {
+  color: #6b7072 !important;
+  font-size: 10px !important;
+  margin-bottom: 10px !important;
+  text-align: center !important;
+}
+.light-card-button-bottom {
+    background-color: #dc4405  !important;
+    color: #FFF  !important;
+    font-size: 12px  !important;
+    line-height: 12px  !important;
+    text-decoration-line: none  !important;
+    padding: 5px 15px !important;
+    margin-bottom: 10px !important;
+    text-align: center;
+}
+
+.light-card-button-bottom:hover {
+  text-decoration-line: none !important;
+  color: #FFF !important;
+}

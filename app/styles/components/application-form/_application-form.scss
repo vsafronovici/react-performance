@@ -1,0 +1,88 @@
+.dynamic-form {
+  position: relative;
+  .save-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    font-family: $uni-font-bold;
+    a{
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $pale-blue !important;
+        .icon-ic-diagram-arrow-right:before {
+          color: $primary-color;
+          font-size: $font-size-label;
+          margin-right: 10px;
+        }
+    }
+  }
+  .section-content-container-5sequance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &-receipt {
+    width: 307px;
+  }
+  .form-chapter-review {
+    background-color: $white;
+    .button-container {
+      display: flex;
+    }
+  }
+}
+.ant-steps-item-icon>.ant-steps-icon {
+  line-height: 24px !important;
+}
+.ant-steps-item-icon {
+  line-height: 24px;
+}
+
+
+@media screen and (max-width: $lg){
+  .section-form-container {
+    margin: 72px 0px 110px;
+    position: relative;
+
+    .dynamic-form {
+      .section-content-container-5sequance {
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $lg) and (max-width: $xl) {
+  .section-form-container {
+    margin: 72px 80px 150px 48px;
+    max-width: 580px;
+  }
+}
+
+@media screen and (max-width: $xl) {
+  .dynamic-form {
+    .section-content-container-5sequance {
+      display: flex;
+      flex-direction: column;
+      justify-content: normal;
+    }
+  }
+}
+
+@media screen and (min-width: $xl) {
+  .section-form-container {
+    margin: 72px 0 50px;
+  }
+}
+
+.section-form-container {
+  max-width: 830px;
+}
+
+@media screen and (max-width: $sm) {
+  .sidebar-sticky.app-form-sidebar-container {
+    position: relative;
+  }
+}

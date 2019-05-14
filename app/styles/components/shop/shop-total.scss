@@ -1,0 +1,30 @@
+.shop-total-container {
+  border-radius: $border-radius-sm;
+  background-color: $white-grey;
+  min-height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px 23px;
+  margin-top: 33px;
+  .total-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .total-title {
+
+    }
+    .total-price {
+      margin-left: 33px;
+    }
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .shop-total-container {
+    .total-items-container {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+}

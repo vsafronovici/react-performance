@@ -1,0 +1,63 @@
+.light-main-container {
+  width: 100%;
+}
+
+
+
+.light-container-titles {
+  display: flex;
+  direction: row;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.light-menus {
+  display: flex;
+  direction: row;
+  justify-content: center;
+  width: 100%;
+  text-align:center;
+}
+
+//** Este class pentru main title (Configure your individual solution)
+
+.light-black-title {
+  color: #000 !important;
+  font-size: 19px  !important;
+  margin: 0px 10px !important;
+}
+
+//** Este class pentru main subtitle (Credit card payments, e-commerce or mobile payments...)
+
+.light-grey-subtitle {
+  color: #9E9E9E !important;
+  font-size: 17px !important;
+  margin-bottom: 10px !important;
+}
+
+//** Aici sunt doi classuri pentru Button "Show solution" , va puneti nume class 'link-button'
+
+.light-orange-button {
+    background-color: #dc4405  !important;
+    color: #FFF  !important;
+    font-size: 12px  !important;
+    line-height: 12px  !important;
+    text-decoration-line: none  !important;
+    padding: 5px 15px !important;
+    margin-bottom: 10px !important;
+}
+.light-orange-button:hover {
+  text-decoration-line: none !important;
+  color: #FFF !important;
+}
+
+/** aici este class pentru Titles di radio buttons si drop down menu **/
+
+.light-orange-title {
+  color: #dc4405  !important;
+  font-size: 21px !important;
+  font-weight: 700  !important;
+  margin-bottom: 10px  !important;
+}
+

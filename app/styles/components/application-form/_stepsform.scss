@@ -1,0 +1,161 @@
+@import '../../variables/icon_variables';
+@import '../../variables/app';
+
+.steps-pop-wrapper {
+  padding: 30px 30px;
+  border: 1px solid $grey;
+  .steps-btn {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+}
+.ant-steps-vertical.ant-steps-dot .ant-steps-item-tail{
+  left: 0;
+  top: 19px;
+}
+.sf-container {
+  display: inline-block;
+
+  .field-step {
+    color: $white;
+  }
+  .steps-wrapper {
+    display: inline-block;
+    margin-top: 10px;
+
+    .ant-steps-item {
+      margin-bottom: 20px;
+      .ant-icon {
+        vertical-align: 0;
+      }
+    }
+    .ant-steps-item-tail {
+      color: rgba($white, 0.5);
+      &:after {
+        height: 30px;
+        background: rgba($white, 0.5);
+      }
+    }
+    .ant-steps-item-wait {
+      .ant-steps-item-icon {
+        background-color: transparent ;
+        border: 1px solid rgba($white, 0.5);
+        height: 16px;
+        width: 16px;
+        margin-left: 4px;
+        .ant-steps-icon {
+          display: none;
+        }
+      }
+      .ant-steps-item-title {
+        font-family: $uni-font-regular !important;
+        font-size: $font-size-body2;
+        width: 100%;
+        color: $white;
+        opacity: 0.75;
+        margin-left: 4px;
+        line-height: 16px;
+      }
+    }
+    .ant-steps-item-process {
+      .ant-steps-item-content {
+        height: 30px;
+        .ant-steps-item-title {
+          font-size: $font-size-h6;
+          font-family: $uni-font-bold !important;
+        }
+      }
+      .ant-steps-item-icon {
+        border: 3px solid $white;
+        background-color: transparent;
+        height: 24px;
+        width: 24px;
+        .ant-steps-icon {
+          line-height: 24px;
+          display: none;
+          .ant-steps-icon-dot {
+            background: transparent;
+          }
+        }
+      }
+    }
+    .ant-steps-item-finish {
+      .ant-steps-item-title {
+        font-size: $font-size-body2;
+        font-family: $uni-font-regular !important;
+      }
+      .ant-steps-item-icon {
+        background-color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        width: 24px;
+        height: 24px;
+        .ant-steps-icon {
+          color: $primary-color;
+          line-height: 24px;
+          height: 24px;
+          width: 24px;
+        }
+        .anticon-check {
+          color: $primary-color;
+          margin-top: 4px;
+          font-size: $font-size-body2;
+        }
+      }
+      .ant-steps-item-tail {
+        &:after {
+          background-color: $grey;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $sm) and (max-width: $lg) {
+  .ant-steps-item {
+    max-width: 35px;
+  }
+  .steps-app-name {
+    display: none;
+  }
+  .ant-steps-item-title {
+    display: none;
+  }
+}
+@media screen and (min-width: $sm) and (max-width: $lg) {
+  .ant-steps-vertical {
+    .ant-steps-item-content {
+      min-height: 32px;
+    }
+    .ant-steps-item-process, .ant-steps-item-finish {
+       .ant-steps-item-tail {
+         padding-top: 30px;
+       }
+     }
+    .ant-steps-item-finish {
+      .ant-steps-item-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.8428 6H18.4723C18.2801 6 18.0978 6.08387 17.9802 6.22738L9.89616 15.9619L6.01984 11.2932C5.96121 11.2224 5.88646 11.1652 5.80123 11.1258C5.71599 11.0864 5.62248 11.0659 5.52771 11.0658H4.15717C4.02581 11.0658 3.95326 11.2093 4.03365 11.3062L9.40402 17.7735C9.65499 18.0755 10.1373 18.0755 10.3903 17.7735L19.9664 6.23856C20.0467 6.14351 19.9742 6 19.8428 6V6Z' fill='%23080A54'/%3E%3C/svg%3E");
+      }
+    }
+  }
+  .ant-steps-item-finish, .ant-steps-item-process, .ant-steps-item-wait{
+    .ant-steps-item-icon {
+      .ant-steps-icon {
+        display: block !important;
+      }
+    }
+  }
+  .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot{
+    background: transparent;
+  }
+}
+@media screen and (max-width: $sm) {
+  .sf-container {
+    .steps-wrapper {
+      margin-top: 0;
+    }
+  }
+}

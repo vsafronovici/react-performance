@@ -1,0 +1,155 @@
+@import './_typography';
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.furniture-retail:before {
+  content: '\e91c';
+}
+
+.fashion-retail:before {
+  content: '\e91b';
+}
+
+.restaurants:before {
+  content: '\e920';
+}
+
+.health-services:before {
+  content: '\e91e';
+}
+
+.other-industry:before {
+  content: '\e91f';
+}
+
+.icon-dresser-wardrobe:before {
+  content: '\e91a';
+}
+
+.icon-shirt-female:before {
+  content: '\e91d';
+}
+
+.icon-shop-cart-check:before {
+  content: '\e919';
+}
+
+.icon-delete:before {
+  content: '\e916';
+}
+
+.icon-warehouse-cart:before {
+  content: '\e917';
+}
+
+.icon-ic-close:before {
+  content: '\e914';
+}
+
+.icon-ic-sort:before {
+  content: '\e915';
+}
+
+.icon-ic-diagram-arrow-left:before {
+  content: '\e90e';
+}
+
+.icon-ic-diagram-arrow-right:before {
+  content: '\e90f';
+}
+
+.icon-ic-info-hint:before {
+  content: '\e910';
+}
+
+.icon-ic-reset:before {
+  content: '\e911';
+}
+
+.icon-ic-down:before {
+  content: '\e912';
+  font-size: 16px;
+}
+
+.icon-gesture-tap-clock:before {
+  content: '\e901';
+  font-size: 68px;
+}
+
+.icon-ic-info:before {
+  color: $accent-medium;
+  content: '\e902';
+  font-size: 24px;
+}
+
+.icon-timer-10:before {
+  content: '\e903';
+  font-size: 68px;
+}
+
+.icon-time-stopwatch-quarter:before {
+  content: '\e900';
+  font-size: 68px;
+}
+
+.icon-ic-edit:before {
+  content: '\e904';
+  font-size: 24px;
+}
+
+.icon-reception-hotel:before {
+  content: '\e908';
+}
+
+.icon-fast-food-burger-drink:before {
+  content: '\e905';
+}
+
+.icon-insurance-hands:before {
+  content: '\e906';
+}
+
+.icon-network-question:before {
+  content: '\e907';
+}
+
+.icon-restaurant-eating-set:before {
+  content: '\e909';
+}
+
+.icon-goods-store:before {
+  content: '\e90a';
+}
+
+.icon-ic-forward:before {
+  content: '\e90b';
+}
+
+.icon-shape:before {
+  content: '\e90d';
+}
+
+.icon-delete:before {
+  content: '\e916';
+}
+
+.icon-warehouse-cart:before {
+  content: '\e917';
+}
+
+.icon-ic-backward:before {
+  content: '\e918';
+}

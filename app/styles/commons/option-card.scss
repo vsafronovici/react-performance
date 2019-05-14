@@ -1,0 +1,151 @@
+.option-card {
+  max-width: 100%;
+  background-color: #ffffff;
+  border: $thin-border;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: $border-radius-sm;
+  text-align: center;
+  cursor: pointer;
+  padding: 20px 20px;
+  color: $dark-grey;
+  max-height: 100%;
+  box-shadow: $box-shadow-sm;
+
+  .container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card-image-circle {
+      position: absolute;
+      background: $white-grey;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    img {
+      z-index: 10;
+    }
+  }
+  .oc-fee, .surcharge {
+    font-family: $uni-font-regular;
+  }
+  .oc-footer {
+    text-align: center;
+    margin-top: 10px;
+    .oc-button {
+      margin-top: 18px;
+    }
+  }
+  .oc-subtitle {
+    color: $primary-color;
+    margin-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .oc-top {
+    img {
+      max-width: 100px;
+    }
+  }
+  .oc-content {
+    margin: 0 auto;
+
+    h5, h4 {
+      display: inline;
+    }
+    .oc-disagio-block {
+      margin-bottom: 15px;
+    }
+
+    .oc-title {
+      text-align: center;
+      margin: 15px;
+    }
+
+    .oc-subtitle {
+      margin-top: 20px;
+    }
+
+    .oc-items {
+      min-height: 55px;
+      margin-top: 15px;
+      .oc-item {
+        &-icon:before {
+          content: '\E632';
+          display: block;
+          font-family: 'anticon';
+          font-size: 34px;
+          font-weight: 100;
+          width: 34px;
+        }
+        &-content {
+          width: 100%;
+          margin-left: 20px;
+          font-style: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .oc-price {
+      text-align: center;
+      font-size: 21px;
+      font-weight: bold;
+      margin: 46px 0px;
+    }
+  }
+
+  .oc-hr, .ant-divider-horizontal{
+    @extend .grey-back-ground;
+    min-width: $oc-divider !important;
+    width: $oc-divider;
+    height: 2px;
+    margin: 10px auto;
+  }
+
+  .oc-marketing {
+
+    .deliveryInfo {
+      font-size: 12px;
+    }
+  }
+}
+
+.oc-equal-height {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 70px;
+}
+
+.option-card.active {
+  border-radius: $border-radius-sm;
+  outline: none;
+}
+
+.option-card.readonly {
+  cursor: auto;
+}
+
+@media screen and (min-width: $sm) and (max-width: $lg) {
+  .step2-container {
+    .option-card {
+      .container-image {
+        margin-left: 20px;
+      }
+      .oc-hr,
+      .ant-divider-horizontal {
+        margin-left: 0;
+      }
+      .oc-equal-height {
+        align-items: baseline;
+      }
+    }
+  }
+}
+
+// OPTION_CART_SIDEBAR
+.oc-sidebar {
+  max-width: 280px;
+}

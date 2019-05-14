@@ -1,0 +1,75 @@
+.ex-container .ex-wrapper {
+  padding: 0px 30px 30px 30px;
+}
+
+.extras-item {
+  border: $thin-border;
+  .flex-mobile-column {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &.active {
+    border: 1px solid $accent-light;
+    background: $accent-light;
+  }
+}
+
+.extras-item-control {
+  font-family: $uni-font-regular;
+  align-self: center;
+
+  &.add-item {
+    margin-right: 60px;
+  }
+}
+
+.ex-price {
+  margin-left: 20px;
+
+  h6 {
+    margin: 12px 0 0;
+  }
+
+  .subtitle {
+    font-family: $uni-font-regular;
+    font-Size: 12px;
+    text-align: right;
+    display: block;
+  }
+}
+
+.ex-total-cost {
+  font-size: 24px;
+  margin: 0 10px 0 30px;
+}
+
+@media screen and (max-width: $sm) {
+  .ex-container {
+    .ex-wrapper {
+      padding: 10px 10px;
+      .extras-item {
+        &-check {
+          align-self: flex-start;
+          margin-top: 10px;
+        }
+        .extras-item-control-descriptions {
+          margin-top: -20px;
+        }
+        .flex-mobile-column {
+          margin-left: 30px;
+        }
+      }
+      .ex-total-cost {
+        font-size: 2rem;
+        margin: 0 0 0 5px;
+      }
+      .ex-price {
+        margin-left: 0;
+        .subtitle {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

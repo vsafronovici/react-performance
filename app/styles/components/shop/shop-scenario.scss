@@ -1,0 +1,87 @@
+.shop-scenario-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  .scenario {
+    background-color: $white;
+    border-radius: 4px;
+    border: solid 1px $grey;
+    //width: 1148px;
+    //height: 508px;
+    .scenario-vertical-align {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .scenario-title {
+      font-size: 38px;
+      margin-bottom: 18px;
+    }
+    .scenario-description {
+      margin-bottom: 20px;
+    }
+    .scenario-button {
+
+    }
+  }
+  .scenario-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and(min-width: $xxl) {
+  .shop-scenario-container {
+    .scenario {
+      width: 1148px;
+      height: 508px;
+    }
+  }
+}
+
+@media screen and(min-width: $xl) {
+  .shop-scenario-container {
+    .scenario {
+      width: 1148px;
+      height: 508px;
+    }
+  }
+}
+
+@media screen and(max-width: $xl) {
+  .shop-scenario-container {
+    .scenario-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .scenario-wrapper {
+      width: 100%;
+      text-align: center;
+    }
+    .scenario {
+      width: 90%;
+      height: 569px;
+      img {
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: $sm) {
+  .shop-scenario-container {
+    .scenario {
+      width: 90%;
+      height: 486px;
+      .scenario-title {
+        font-size: 24px;
+        margin-bottom: 18px;
+      }
+      img {
+        max-width: 162px;
+
+      }
+    }
+  }
+}

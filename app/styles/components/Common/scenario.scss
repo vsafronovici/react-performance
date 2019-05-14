@@ -1,0 +1,105 @@
+$font-size-title-scenario: 40px;
+
+.scenario-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba($black, 0.65);
+  .scenario-page-logo .icon-concardis-logo{
+    position: absolute;
+    top: 50px;
+    left: 52px;
+  }
+}
+
+.text-scenario-title {
+  font-size: $font-size-title-scenario;
+}
+
+.scenario-container-content.text-body-2 {
+  display: block !important;
+}
+
+.scenario-title {
+  margin-bottom: 15px;
+  color: $primary-color;
+}
+.scenario-at-check {
+  margin-right: 25px;
+  text-align: center;
+}
+
+.scenario-container > .scenario-content {
+  max-width: 48%;
+}
+
+.scenario-container {
+  .scenario-content {
+    .ant-btn {
+      margin-top: 20px;
+    }
+    .scenario-content-title3 {
+      margin-top: 20px;
+    }
+    @media screen and (max-width: $md) {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .scenario-title2 {
+      margin-bottom: 30px;
+      .scenario-email {
+        color: red;
+      }
+    }
+  }
+  .scenario-image {
+    justify-self: center;
+    margin-left: 33px;
+    width: 550px;
+    max-width: 48%;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .scenario-main-container {
+    .scenario-page-logo .icon-concardis-logo {
+      position: absolute;
+      top: 32px;
+      left: 32px;
+    }
+  }
+  .scenario-container {
+    display: flex;
+    flex-direction: column-reverse;
+    .scenario-content {
+      text-align: center;
+      width: 100%;
+      color: $font-main-color;
+    }
+    .scenario-image {
+      margin-left: 0px;
+      margin-bottom: 20px;
+      justify-content: center;
+      max-width: 100%;
+    }
+  }
+
+}
+
+@media screen and (max-width: $xs) {
+  .scenario-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: $xl) {
+  .scenario-container-content {
+    .scenario-content {
+      max-width: 100% !important;
+    }
+  }
+}

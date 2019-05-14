@@ -1,0 +1,61 @@
+.field-boxed_radio_group {
+  margin-bottom: 20px;
+  .description {
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: $dark-grey;
+  }
+  .radio-container {
+    min-height: 80px;
+    border-radius: $border-radius-sm;
+    padding: 0px 20px;
+    border: $thin-border;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.checked-field {
+      border: $checkbox-border-boxed;
+      background: $white-blue;
+      label {
+        color: $primary-color;
+      }
+    }
+
+    .radio-container-field {
+      display: flex;
+      max-height: 100px;
+      align-items: center;
+    }
+    .container-titles {
+      color: $dark-grey;
+      padding: 20px 40px;
+
+      label {
+        font-size: 18px;
+      }
+
+      .radio-label2 {
+        @extend .text-body-1;
+      }
+    }
+    .radio-input {
+      margin-left: 15px;
+    }
+  }
+  .form-field {
+    .ant-radio-group {
+      label {
+        font-size: 12px;
+      }
+    }
+  }
+  label.ant-radio-wrapper {
+    margin: 0px 0px;
+    margin-top: 0px !important;
+  }
+}

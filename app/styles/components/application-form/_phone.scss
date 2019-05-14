@@ -1,0 +1,21 @@
+.phone-wrapper {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+  &-code {
+    width: 170px;
+  }
+  &-number {
+    width: 216px;
+    margin-left: 4px;
+  }
+
+  label {
+    max-height: 16px;
+    font-size: 13px;
+  }
+}
+
+
+

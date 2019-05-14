@@ -1,0 +1,18 @@
+.shop-order-header-container {
+  margin-bottom: 17px;
+  margin-top: 38px;
+  .header-item {
+    background-color: $white-grey;
+    border-radius: $border-radius-sm;
+    padding: 12px 0 12px 16px;
+    border: 1px solid $white;
+  }
+  .header-item-price {
+    background-color: $white-grey;
+    border-radius: $border-radius-sm;
+    padding: 12px 16px 12px 0;
+    border: 1px solid $white;
+    text-align: right;
+  }
+}
+

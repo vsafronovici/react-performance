@@ -1,0 +1,39 @@
+.field-boxed-checkbox-group {
+  margin-bottom: 20px;
+  .field-checkbox-item {
+    display: flex;
+    font-family: $uni-font-regular;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 0 20px;
+    border: $thin-border;
+    margin-bottom: 15px;
+    border-radius: $border-radius-sm;
+      .label {
+        @extend .text-body-3;
+      }
+    &.checked-field {
+      border: $checkbox-border-boxed;
+      background-color: $white-blue;
+      .label {
+        color: $primary-color !important;
+      }
+    }
+    .container-labels {
+      color: $dark-grey;
+      padding: 20px 40px;
+
+      .description {
+        @extend .text-body-1;
+        color: $font-main-color;
+        word-wrap: break-word;
+      }
+    }
+    .field {
+      margin-left: 15px;
+      display: flex !important;
+      align-items: center !important;
+      margin-left: 15px;
+    }
+  }
+}

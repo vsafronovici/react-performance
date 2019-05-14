@@ -1,0 +1,78 @@
+.shop-container {
+  background-color: $white;
+  min-height: 100vh;
+
+  .shop-top {
+    .shop-title {
+      margin-top: 35px;
+    }
+
+    .shop-description {
+      margin-top: 32px;
+      margin-bottom: 16px;
+
+      .shop-section-title {
+        margin-bottom: 12px;
+      }
+    }
+
+    .shop-list {
+      margin-bottom: 44px;
+    }
+  }
+
+  .shop-section-title {
+    margin-bottom: 24px;
+    color: $font-main-color !important;
+  }
+
+  .view-order-btn {
+    min-width: 268px;
+  }
+
+  .shop-order-btn {
+    min-width: 204px;
+  }
+
+  .shop-subhead-flex-container {
+    display: flex;
+    justify-content: space-between;
+
+    .single-info-desc {
+      display: flex;
+      justify-content: flex-end;
+
+      .step2-top-icon {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.shop-align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+}
+
+@media screen and (max-width: $sm) {
+  .shop-subhead-flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+    &.shop-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .single-info-desc {
+      display: flex;
+      justify-content: flex-start !important;
+      margin-bottom: 12px;
+      margin-top: 12px;
+      .step2-top-icon {
+        margin-right: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.control-container {
+  align-items: center;
+
+  button {
+    align-self: center;
+  }
+}
+
+.checkbox-validate {
+  padding: 0 10px 0 0;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+
+  .validity-status {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+    i {
+      align-self: center;
+    }
+
+    &.success {
+      color: $success-color;
+    }
+
+    &.error {
+      color: $error-color;
+    }
+  }
+
+  label {
+    margin-left: 10px;
+    padding-top: 3px;
+    font-size: $font-size-h6;
+    align-self: center;
+  }
+}

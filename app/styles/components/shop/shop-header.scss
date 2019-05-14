@@ -1,0 +1,10 @@
+.shop-header {
+  margin-top: 38px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .shop-back-button {
+    cursor: pointer;
+  }
+}

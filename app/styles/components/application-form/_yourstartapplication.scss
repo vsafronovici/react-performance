@@ -1,0 +1,131 @@
+.start-app-container {
+  margin: 92px 180px 0px 156px;
+
+  @media screen and (min-width: $xl) and (max-width: $xxl) {
+      margin: 62px 80px 0px 56px;
+  }
+
+  .title {
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 9px;
+  }
+  .description {
+    h6 {
+      line-height: 28px;
+    }
+    margin-bottom: 28px;
+  }
+  .features-container {
+    border-radius: $border-radius-sm;
+    background-color: $white-grey;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 83px 37px 62px;
+    justify-content: space-around;
+    margin-bottom: 27px;
+    .feature-item {
+      text-align: center;
+      width: 155px;
+      .icon {
+        margin-bottom: 27px;
+        color: $primary-color;
+        i {
+          svg {
+            height: 70px;
+            width: 70px;
+          }
+        }
+      }
+      .description {
+        font-family: $uni-font-regular;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .info {
+    &-header {
+      line-height: 24px;
+      margin-left: 10px;
+      max-height: 322px;
+    }
+  }
+}
+
+@media screen and (min-width: $lg) and (max-width: $xl) {
+  .start-app-container {
+    margin: 10%;
+    .features-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      .feature-item {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: row;
+        .description {
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+          margin-left: 15px;
+        }
+        .icon {
+          margin-bottom: 0;
+
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $sm) {
+  .start-app-container {
+    .ant-btn {
+      padding: 13px 15px;
+    }
+  }
+}
+
+@media screen and (min-width: $xl) and (max-width: $xxl) {
+  .start-app-sidebar-container {
+    .option-card {
+      .container-image {
+        img {
+          max-width: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .start-app-sidebar-container {
+    .option-card {
+      max-width: 280px;
+    }
+  }
+}
+
+@media screen and (max-width: $xl) {
+  .features-container {
+    .feature-item {
+      .description:last-child {
+        display: flex;
+        flex-direction: column !important;
+        align-self: center;
+        align-items: flex-start;
+        margin-left: 15px;
+        .offer-expires {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

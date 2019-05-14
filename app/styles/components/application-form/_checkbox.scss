@@ -1,0 +1,13 @@
+.field-checkbox {
+  display: flex;
+  direction: row;
+  max-width: 411px;
+  .field {
+    margin-right: 15px;
+  }
+  .label {
+    font-size: 10px;
+    font-weight: 700;
+    color: $black;
+  }
+}

@@ -1,0 +1,36 @@
+.field-boxed-checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding: 0 20px;
+  border: $thin-border;
+  margin-bottom: 15px;
+  border-radius: $border-radius-sm;
+
+  &.checked {
+    border: $checkbox-border-boxed;
+    background-color: $white-blue;
+    label {
+      color: $primary-color;
+    }
+  }
+
+  .container-titles {
+    color: $dark-grey;
+    padding: 20px 40px;
+
+    label {
+      @extend .text-body-3;
+    }
+
+    .help {
+      @extend .text-body-1;
+    }
+  }
+
+  .field {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+}

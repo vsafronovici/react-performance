@@ -1,0 +1,22 @@
+$white-light: #f1f1f4;
+
+.count {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  font-family: $uni-font-regular;
+
+  &-button {
+    cursor: pointer;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+
+  &-value {
+    background: $white;
+    border-radius: $border-radius-sm;
+  }
+}

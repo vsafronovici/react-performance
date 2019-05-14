@@ -1,0 +1,151 @@
+$uni-font-regular: 'UniNeueRegular';
+$uni-font-bold:    'UniNeueBold';
+
+$font-family-sans-serif: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-size-xs: 1.2rem;
+$font-size-sm: 1.4rem;
+$font-size-base: 1.6rem;
+$font-size-lg: 2rem;
+
+$line-height: 1.3;
+
+$font-size-h2: 44px;
+$font-size-h3: 38px;
+$font-size-h4: 32px;
+$font-size-h5: 24px;
+$font-size-h6: 18px;
+$font-size-body3: 18px;
+$font-size-body2: 16px;
+$font-size-body1: 14px;
+$font-size-label: 14px;
+$font-size-button: 12px;
+$font-size-caption: 12px;
+$font-size-oveline: 11px;
+
+$headings-font-family: UniNeueRegular;
+$headings-font-weight: 700;
+
+// *** Logo size
+$logo-size: 40px;
+
+// *** Icons size
+.icon-24x-24x {
+  width: 24px;
+  height: 24px;
+}
+// *** Colors
+.d-prime {
+  color: $primary-color !important;
+}
+.d-accent {
+  color: $accent-color;
+}
+.m-accent {
+  color: $accent-medium;
+}
+.l-accent {
+  color: $accent-light;
+}
+.white {
+  color: $white;
+}
+.error {
+  color: $error-color;
+}
+.warning {
+  color: $warning-color;
+}
+.success {
+  color: $success-color;
+}
+
+.d-grey {
+  color: $dark-grey !important;
+}
+.m-grey {
+  color: $sc-label-color;
+}
+.l-grey {
+  color: $white-grey;
+}
+
+.a-medium {
+  color: $accent-medium;
+}
+.a-lighter {
+  color: $light-blue;
+}
+.links {
+  color: $link-color;
+}
+
+// *** Aligns
+  .align-left {
+    text-align: left;
+  }
+  .align-right {
+      text-align: right;
+  }
+// *** Font-weight
+.regular {
+  font-weight: 300;
+  font-family: $uni-font-regular !important;
+}
+.bold {
+  font-weight: 700;
+  font-family: $uni-font-bold !important;
+}
+
+h2 {
+  font-size: $font-size-h2 !important;
+  font-family: $uni-font-regular !important;
+}
+h3 {
+  font-size: $font-size-h3 !important;
+  font-family: $uni-font-regular !important;
+}
+h4 {
+  font-size: $font-size-h4 !important;
+  font-family: $uni-font-regular !important;
+}
+h5 {
+  font-size: $font-size-h5 !important;
+  font-family: $uni-font-regular !important;
+  color: $primary-color;
+}
+h6 {
+  font-size: $font-size-h6 !important;
+  font-family: $uni-font-regular !important;
+  color: $primary-color;
+}
+
+.font-main-color {
+  color: $font-main-color;
+}
+.text-body-1 {
+  font-family: $uni-font-regular;
+  font-size: $font-size-body1 !important;
+}
+.text-body-2 {
+  font-family: $uni-font-regular;
+  font-size: $font-size-body2;
+}
+.text-body-3 {
+  font-family: $uni-font-bold;
+  font-size: $font-size-body3;
+}
+
+.text-body-caption {
+  font-size: $font-size-caption !important;
+  font-family: $uni-font-regular !important;
+}
+
+.text-body-oveline {
+  font-size: $font-size-oveline !important;
+}
+
+.text-h4size {
+  font-family: $uni-font-bold !important;
+  font-size: $font-size-h4;
+}

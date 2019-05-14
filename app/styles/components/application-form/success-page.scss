@@ -1,0 +1,14 @@
+#success-page-container {
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: $md) {
+  .content-wrapper{
+    top: 32px;
+  }
+}

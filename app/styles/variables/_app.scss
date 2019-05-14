@@ -1,0 +1,96 @@
+$media-path: '../../assets/media/';
+$font-path: '../../assets/fonts/';
+
+$header-height: 7rem;
+$footer-height: 4.8rem;
+
+$app-color: #00b4d5;
+
+$app-easing: cubic-bezier(0.35, 0.01, 0.77, 0.34);
+
+// *** Colors definition
+$white: #fff;
+$black: #000;
+
+$orange: #ed8b00;
+
+// *** Greys
+$dark-grey: #4d4d4d;
+$grey: #ccc;
+$light-grey: #f0f0f0;
+$white-grey: #f3f5f7;
+
+// *** Blues
+$dark-blue: #005776;
+$hippie-blue: #408198;
+$bright-blue: #00bef0;
+$pale-blue: #6e9fbc;
+$light-blue: #cae9fb;
+$white-blue: #e4f4fd;
+
+// *** Alert colors
+$error-color: #e82430;
+$warning-color: #e8b82f;
+$success-color: #2cc097;
+
+$primary-color: $dark-blue;
+$accent-color: $orange;
+$accent-medium: $pale-blue;
+$accent-light: $white-blue;
+
+$sidebar-border-grey: $grey;
+$dot-spinner-color: $primary-color;
+
+// *** Button colors
+$button-secondary-hover-color: #f8f8fa;
+
+// ***Links
+$link-color: $accent-medium;
+
+// *** Font colors
+$sc-title-color: $primary-color;
+$sc-label-color: #85858f;
+
+$font-main-color: $dark-grey;
+$font-active-color: $orange;
+
+$page-bg-color: $white;
+
+// *** Shadows
+$primary-shadow-d: rgba($primary-color, 0.85);
+$primary-shadow-l: rgba($primary-color, 0.25);
+$accent-shadow-d: rgba($accent-color, 0.85);
+$accent-shadow-l: rgba($accent-color, 0.25);
+$white-shadow: rgba($white, 0.85);
+
+// *** Box-shadows
+$box-shadow-sm: none; // 2px 4px 8px 0 rgba(56, 56, 56, 0.06);
+$box-shadow-md: none; // 0 2px 20px 0 rgba(8,10,84,.26);
+$box-shadow-case: 0 2px 20px 0 rgba(8, 10, 84, .26);
+
+// *** Borders
+$button-accent-border: 1px solid $accent-color;
+$input-border: 2px solid $accent-medium;
+$sidebar-border: 8px solid $light-blue;
+$thin-border: 1px solid $grey;
+$regular-border: 2px solid $grey;
+$checkbox-border-boxed: 1px solid $white-blue;
+
+// *** Border radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+
+// *** Option Card divider
+$oc-divider: 200px;
+
+// *** Font sizes
+$sc-title-size: 24px;
+$sc-label-size: 16px;
+
+// *** Screen break-points
+$xs: 575px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1600px;

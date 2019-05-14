@@ -1,0 +1,100 @@
+.app__configurator {
+  height: 100%;
+  .step2-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    .step2-footer-container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+  }
+  .summary-field {
+    margin-bottom: 24px;
+  }
+  .oc-summary {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+
+    .oc-s-row {
+      display: flex;
+      flex-direction: row;
+      margin: 28px 0px;
+
+      .oc-s-col {
+        width: 250px;
+        font-size: 16px;
+        height: 19px;
+      }
+
+      .oc-s-value {
+        font-weight: bold;
+      }
+    }
+
+    .oc-s-btns {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+
+      button {
+        width: 200px;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: $sm) and (max-width: $lg) {
+  .app__configurator {
+    .step2-container {
+
+      .option-card {
+        max-width: 100%;
+        width: 100%;
+        text-align: left;
+        .oc-all-content-container {
+          display: flex;
+          flex-direction: row;
+          .oc-content {
+            margin-left: 40px;
+            .oc-footer {
+              text-align: left;
+            }
+            .oc-title {
+              margin-top: 0px;
+              text-align: left;
+            }
+            .oc-items {
+              
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .summary-container {
+    display: flex;
+    flex-direction: row;
+    .summary-field {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and  (max-width: $xl) {
+  .app__configurator {
+    .step2-container {
+      .option-card {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
