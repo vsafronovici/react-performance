@@ -28,7 +28,7 @@ const middleware = [
 /* istanbul ignore next */
 if (process.env.NODE_ENV === 'development') {
   const { createLogger } = require('redux-logger')
-  middleware.push(createLogger({ collapsed: true }))
+  // middleware.push(createLogger({ collapsed: true }))
 }
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose

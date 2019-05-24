@@ -1,0 +1,40 @@
+#app {
+  //color: red;
+
+  button {
+    text-decoration: underline;
+  }
+
+  .demo1 {
+    .control {
+      display: flex;
+
+      .control-item {
+        width: 200px
+      }
+    }
+  }
+
+  .demo2 {
+    .container {
+      //display: flex;
+
+      &-item {
+        width: 90%;
+
+        .table {
+          &-raw {
+            display: flex;
+          }
+
+          &-cell {
+            //width: 100px;
+            border: 1px solid black;
+            padding: 5px 20px;
+          }
+        }
+      }
+    }
+  }
+
+}

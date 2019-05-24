@@ -14,6 +14,8 @@ import { showAlert } from './actions/app-action'
 import { store, persistor } from './store'
 import { Application } from './containers/Application'
 
+import '../styles/main.scss'
+
 const isProd = process.env.NODE_ENV === 'production'
 
 export const init = {
