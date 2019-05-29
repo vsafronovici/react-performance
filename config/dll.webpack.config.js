@@ -14,7 +14,11 @@ module.exports = {
   entry: {
     // create two library bundles, one with jQuery and
     // another with Angular and related libraries
-    'app_libs': ['antd', 'react', 'react-dom', 'react-redux', 'redux', 'redux-form', 'redux-persist', 'redux-saga', 'react-device-detect'],
+    'app_libs': [
+      'react',
+      // 'antd',
+      'react-dom', 'react-redux', 'redux', 'redux-form', 'redux-persist', 'redux-saga', 'react-device-detect'
+    ],
   },
 
   output: {
