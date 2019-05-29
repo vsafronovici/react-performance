@@ -85,14 +85,17 @@ const vdom2 =
   }
 
   const Component = () => null
-  const Component2 = () => null
+  const CustomSelect = () => null
+
+
 const deleteItem = null
 
 const goodRendering = () => {
 
-  const item = {id: 1, name: 'some name', age: 30}
+  const options = {id: 1, name: 'some name', age: 30}
   return <div>
-    <button onClick={e => deleteItem()}>delete</button>
+
+    <CustomSelect options={options} onChange={e => onChange()} />
 
   </div>
 

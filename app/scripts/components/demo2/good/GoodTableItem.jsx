@@ -18,14 +18,14 @@ export class GoodTableItem extends React.Component {
   }
 
   componentWillReceiveProps(nextProps){
-    // console.log(`${this.name} componentWillReceiveProps: ${this.props.item === nextProps.item}`)
+    console.log(`${this.name} componentWillReceiveProps: ${this.props.item === nextProps.item}`)
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    const { props, state } = this
-    // console.log(`${this.name} shouldComponentUpdate: props=${shallowEqual(props, nextProps)}; state=${shallowEqual(state, nextState)}`)
-    return !shallowEqual(props, nextProps) || !shallowEqual(state, nextState)
-  }
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   const { props, state } = this
+  //   // console.log(`${this.name} shouldComponentUpdate: props=${shallowEqual(props, nextProps)}; state=${shallowEqual(state, nextState)}`)
+  //   return !shallowEqual(props, nextProps) || !shallowEqual(state, nextState)
+  // }
 
   render() {
     console.log(`${this.name} render`, this.props)
