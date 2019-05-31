@@ -1,0 +1,33 @@
+    JSX, JS, VDOM, render() creates real DOM
+	reRendering - conditions and scenarios. VDOM comparing. show the reconciliation process image 
+	the worst is unmount/mount a component
+	
+	show Demo1
+	- badRendering() and show react tool children
+	- goodRendering() and falsey values
+	- alsoGoodRendering() with key
+	
+	show Demo2
+	- show bad table
+	- veryBadRendering() mount/unmount for new items
+	- badRendering() add some new items and delete old ones
+	- betterRendering() show how many times render is called with same props;
+		uncomment from componentWillReceiveProps; very bad for components with many items
+		
+	- show Demo3; rendering when props are the same
+	
+	- show good table
+	- show with GoodTableItem
+	- explain that shouldComponentUpdate() default returns true
+	- explain shallowEqual from .doc
+	
+	- show with GoodTableItemPure
+	
+	- set deepClone=true and uncomment return in shouldComponentUpdate() or pass each property of item 
+	  and uncomment in PureComp
+	  
+	- ideal would be just Increment component should update. How to make it? Redux connect. 
+
+	- show performance difference with url http://localhost:3001/?react_perf;
+		set NR_OF_INITIAL_ITEMS = 100; go to performance tab
+	

@@ -20,30 +20,15 @@ class ClassComponent extends React.Component {
 
 export class Demo3 extends React.Component {
 
-  state = {
-    logged: false
-  }
-
-  toggleChange = e => {
-    this.setState({
-      logged: !this.state.logged
-    })
-  }
-
   update = () => {
     this.forceUpdate()
   }
 
-
-
-
   render() {
-    console.log('Demo3', this.state)
-
     return <div className="demo1">
       <div className="control">
         <div className="control-item">
-          <input type="checkbox" defaultChecked={this.state[1]} onChange={this.update}/> <b>user logged</b>
+          <button onClick={this.update}>update</button>
         </div>
       </div>
       <div><FunctionalComponent x={1}/></div>

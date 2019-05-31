@@ -105,7 +105,7 @@ export class Demo1 extends React.Component {
     } else {
       return <div>
         {[
-          <Content key="b"/>,
+          <Content key="bv"/>,
           <NotLoggedFooter key="d"/>
         ]}
       </div>
@@ -127,8 +127,8 @@ export class Demo1 extends React.Component {
       {/*{this.alsoBadRendering()}*/}
       {/*{this.alsoBadRendering2()}*/}
       {/*{this.goodRendering()}*/}
-      {this.equivalentToGoodRendering()}
-      {/*{this.alsoGoodRendering()}*/}
+      {/*{this.equivalentToGoodRendering()}*/}
+      {this.alsoGoodRendering()}
     </div>
   }
 }

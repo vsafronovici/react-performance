@@ -6,7 +6,7 @@ import { Demo3 } from '../components/Demo3'
 export class Application extends React.Component {
 
   render() {
-    return <Demo3 />
+    return <Demo2 />
   }
 }
 

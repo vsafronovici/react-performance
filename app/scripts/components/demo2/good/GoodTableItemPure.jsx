@@ -1,11 +1,12 @@
 import React from 'react'
 import shallowEqual from 'shallow-equal/objects/'
+import { Increment } from '../common/Increment'
 
 export class GoodTableItemPure extends React.PureComponent {
 
   constructor(props) {
     super(props)
-    this.name = `${this.constructor.name} ${props.item.id}`
+    this.name = `${this.constructor.name} ${props.id !== undefined ? props.id : props.item.id}`
   }
 
   componentDidMount() {
@@ -25,12 +26,13 @@ export class GoodTableItemPure extends React.PureComponent {
     console.log(`${this.name} render`, this.props)
 
     const { item: { id, name, count }, deleteItem, incrementCount } = this.props
+    // const { id, name, count, deleteItem, incrementCount } = this.props
 
     return <div className="table-raw">
       <div className="table-cell">{id}</div>
       <div className="table-cell">{name}</div>
       <div className="table-cell">
-        {count} <button onClick={incrementCount(id)}>increment</button>
+        <Increment id={id} count={count} incrementCount={incrementCount} />
       </div>
       <div className="table-cell">
         <button onClick={deleteItem(id)}>delete</button>

@@ -35,8 +35,8 @@ export class BadTableItems extends React.Component {
   render() {
     // console.log(`${this.constructor.name} render`, this.props)
     // return this.veryBadRendering()
-    return this.badRendering()
-    // return this.betterRendering()
+    // return this.badRendering()
+    return this.betterRendering()
   }
 }
 

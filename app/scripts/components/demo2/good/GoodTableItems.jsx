@@ -21,6 +21,7 @@ export class GoodTableItems extends React.Component {
       const Component = it.id < NR_OF_INITIAL_ITEMS ? GoodTableItem : RedTableItem
       // const Component = it.id < NR_OF_INITIAL_ITEMS ? GoodTableItemPure : RedTableItem
       return <Component item={it} deleteItem={deleteItem} incrementCount={incrementCount} key={it.id} />
+      // return <Component id={it.id} name={it.name} count={it.count}  deleteItem={deleteItem} incrementCount={incrementCount} key={it.id} />
     })
   }
 }
