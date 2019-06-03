@@ -18,7 +18,7 @@ export class BadTableItem extends React.Component {
   }
 
   componentWillReceiveProps(nextProps){
-    console.log(`${this.name} componentWillReceiveProps: ${this.props.item === nextProps.item}`)
+    // console.log(`${this.name} componentWillReceiveProps: ${this.props.item === nextProps.item}`)
   }
 
   render() {

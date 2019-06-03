@@ -1,6 +1,6 @@
 import { clone, omit } from 'ramda'
 
-export const NR_OF_INITIAL_ITEMS = 100
+export const NR_OF_INITIAL_ITEMS = 5
 const DEEP_CLONE = false
 
 export const getInitialItems = () => [...Array(NR_OF_INITIAL_ITEMS).keys()].reduce((acc, item, id) => ({
